@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Trivia!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <script src="assets/javascript/app.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <img src="assets/images/Psych.svg.png" alt="psych-logo" id="logo">
+        <br>
+        <button id="start">Start</button>
+        <p>Start your Psych Fan quiz now!</p>
+    </div>
+    <div class="game-container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1> The Psych Quiz </h1>
+            </div>
+        </div>
+        <div class="row">
+            
+            <div class="wrapper-quiz col-md-9">
+                <header>
+                    <h5>Solve the Mystery!</h5>
+                    <p>Answer the questions in time!</p>
+                    <h2 id="timer"></h2>
+                    <button id="start2">Start</button>
+                </header>
+                <form id="quiz">
+                        <h5> 1. Where does the show take place?</h5>
+                        <input type="radio" name="q1" value="a" id="q1a"> Santa Barbara
+                        <input type="radio" name="q1" value="b" id="q1b"> Toronto
+                        <input type="radio" name="q1" value="c" id="q1c"> Quebec
+                        <input type="radio" name="q1" value="d" id="q1d"> San Jose
+
+                        <h5> 2. How does Shawn Spencer get his abilities to become a psychic detective?</h5>
+                        <input type="radio" name="q2" value="a" id="q2a"> Inherited from his mother
+                        <input type="radio" name="q2" value="b" id="q2b"> A freak accident
+                        <input type="radio" name="q2" value="c" id="q2c"> Trained to observe by his father
+
+                        <h5> 3. What is the name of Burton Guster's car?</h5>
+                        <input type="radio" name="q3" value="a" id="q3a">Blueberry
+                        <input type="radio" name="q3" value="b" id="q3b"> Blackberry
+                        <input type="radio" name="q3" value="c" id="q3c"> Raspberry
+                        <input type="radio" name="q3" value="d" id="q3d"> Boyz-n-berry
+
+                        <h5> 4. What is the name of the serial killer obsessed with Shawn?</h5>
+                        <input type="radio" name="q4" value="a" id="q4a"> Mr. Yang
+                        <input type="radio" name="q4" value="b" id="q4b"> Mrs. Lightly
+                        <input type="radio" name="q4" value="c" id="q4c"> Pierre Despereaux
+                        <input type="radio" name="q4" value="d" id="q4d"> Mr. Yin
+
+                        <h5> 5. Where did Detective Juliet O'Hara work before moving to Shawn and Gus's town?</h5>
+                        <input type="radio"  name="q5" value="a" id="q5a"> New York City
+                        <input type="radio"  name="q5" value="b" id="q5b"> Boston
+                        <input type="radio"  name="q5" value="c" id="q5c"> New Orleans
+                        <input type="radio"  name="q5" value="d" id="q5d"> Miami
+
+                        <h5> 6. What is Buzz McNab's part-time job?</h5>
+                        <input type="radio"  name="q6" value="a" id="q6a"> Consultant
+                        <input type="radio"  name="q6" value="b" id="q6b"> Stripper
+                        <input type="radio"  name="q6" value="c" id="q6c"> Bookkeeper
+                        <input type="radio"  name="q6" value="d" id="q6d"> Writer
+                        
+                        <h5> 7. Which fruit is used as a running gag throughout the show's run?</h5>
+                        <input type="radio" name="q7" value="a" id="q6a"> Blueberry
+                        <input type="radio" name="q7" value="b" id="q6b"> Pineapple
+                        <input type="radio" name="q7" value="c" id="q6c"> Tangelo
+                        <input type="radio" name="q7" value="d" id="q6d"> Watermelon
+
+                        <h5> 8. Why was Detective Carlton Lassiter assigned a new partner?</h5>
+                        <input type="radio" name="q8" value="a" id="q8a"> He was bulling his partner<br>
+                        <input type="radio" name="q8" value="b" id="q8b"> His partner died in the line of duty<br>
+                        <input type="radio" name="q8" value="c" id="q8c"> His partner quit <br>
+                        <input type="radio" name="q8" value="d" id="q8d"> He had an affair with his partner
+
+                        <h5> 9. What is the date on which Shawn and Gus are hired to find a missing camp counselor at a childhood friend's murder mystery camp?</h5>
+                        <input type="radio" name="q9" value="a" id="q9a"> Friday the 13th
+                        <input type="radio" name="q9" value="b" id="q9b"> Thursday the 12th
+                        <input type="radio" name="q9" value="c" id="q9c"> Tuesday the 17th
+                        <input type="radio" name="q9" value="d" id="q9d"> Saturday the 16th
+  
+                        <h5> 10. What is Gus's go-to line to hit on women?</h5>
+                        <input type="radio" name="q10" value="a" id="q10a"> You heard about Pluto? That's messed up, right? <br>
+                        <input type="radio" name="q10" value="b" id="q10b"> Do you have a map? I'm getting lost in your eyes.<br>
+                        <input type="radio" name="q10" value="c" id="q10c"> Hi, how was heaven when you left it?<br>
+                        <input type="radio" name="q10" value="d" id="q10d"> Baby, all your facial parts are in the right spots.
+                </form> 
+            </div>
+            <div class="container">
+                <button id="submit">Submit</button>
+                <div id="right-answers"></div>
+                <div id="wrong-answers"></div>
+                <div id="unanswered"></div>
+            </div>
+        </div>
+
+
+        <footer>
+
+            C'mon son!
+        </footer>
+    </div>
+</body>
+
+</html>
